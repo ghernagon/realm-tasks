@@ -15,6 +15,10 @@
 		D2AF35BD1C89BD160041A958 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2AF35BB1C89BD160041A958 /* LaunchScreen.storyboard */; };
 		D2AF35C81C89BD160041A958 /* RealmTasksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF35C71C89BD160041A958 /* RealmTasksTests.swift */; };
 		D2AF35D31C89BD160041A958 /* RealmTasksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF35D21C89BD160041A958 /* RealmTasksUITests.swift */; };
+		D2AF35E21C89C2240041A958 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF35E11C89C2240041A958 /* Task.swift */; };
+		D2AF35E41C89C3120041A958 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF35E31C89C3120041A958 /* TaskList.swift */; };
+		D2AF35E71C89C73A0041A958 /* TaskListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF35E51C89C73A0041A958 /* TaskListsViewController.swift */; };
+		D2AF35E81C89C73A0041A958 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF35E61C89C73A0041A958 /* TasksViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,10 @@
 		D2AF35CE1C89BD160041A958 /* RealmTasksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealmTasksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2AF35D21C89BD160041A958 /* RealmTasksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTasksUITests.swift; sourceTree = "<group>"; };
 		D2AF35D41C89BD160041A958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2AF35E11C89C2240041A958 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Task.swift; path = DB/Task.swift; sourceTree = "<group>"; };
+		D2AF35E31C89C3120041A958 /* TaskList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskList.swift; path = DB/TaskList.swift; sourceTree = "<group>"; };
+		D2AF35E51C89C73A0041A958 /* TaskListsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListsViewController.swift; sourceTree = "<group>"; };
+		D2AF35E61C89C73A0041A958 /* TasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		E6D2DA4AEF7DCDE581FD9131 /* Pods-RealmTasks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTasks.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmTasks/Pods-RealmTasks.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +121,8 @@
 		D2AF35B11C89BD160041A958 /* RealmTasks */ = {
 			isa = PBXGroup;
 			children = (
+				D2AF35E01C89C1EF0041A958 /* Database */,
+				D2AF35E91C89C76B0041A958 /* Controllers */,
 				D2AF35B21C89BD160041A958 /* AppDelegate.swift */,
 				D2AF35B41C89BD160041A958 /* ViewController.swift */,
 				D2AF35B61C89BD160041A958 /* Main.storyboard */,
@@ -139,6 +149,24 @@
 				D2AF35D41C89BD160041A958 /* Info.plist */,
 			);
 			path = RealmTasksUITests;
+			sourceTree = "<group>";
+		};
+		D2AF35E01C89C1EF0041A958 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				D2AF35E11C89C2240041A958 /* Task.swift */,
+				D2AF35E31C89C3120041A958 /* TaskList.swift */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		D2AF35E91C89C76B0041A958 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D2AF35E51C89C73A0041A958 /* TaskListsViewController.swift */,
+				D2AF35E61C89C73A0041A958 /* TasksViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		FDD3D23E1FA0B159001CBE15 /* Frameworks */ = {
@@ -331,8 +359,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2AF35E41C89C3120041A958 /* TaskList.swift in Sources */,
 				D2AF35B51C89BD160041A958 /* ViewController.swift in Sources */,
+				D2AF35E71C89C73A0041A958 /* TaskListsViewController.swift in Sources */,
+				D2AF35E21C89C2240041A958 /* Task.swift in Sources */,
 				D2AF35B31C89BD160041A958 /* AppDelegate.swift in Sources */,
+				D2AF35E81C89C73A0041A958 /* TasksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
